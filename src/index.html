@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfólio Profissional de Matheus Henrique de Oliveira Mendes - Desenvolvedor Back-End & Analista de Sistemas">
+  <title>Portfólio - Matheus Mendes</title>
+  
+  <!-- Estilos e Ícones Externos -->
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="shortcut icon" href="img/programacao.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Canvas de Animação de Fundo -->
+  <canvas id="star-canvas"></canvas>
+  <canvas id="background-canvas"></canvas>
+
+  <!-- Botão Flutuante: Voltar ao Topo -->
+  <button id="btn-topo" class="floater" title="Voltar ao topo" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Cabeçalho & Navegação Principal -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="#home">Matheus.dev</a></div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li class="dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">Contatos</button>
+          <div class="dropdown-menu">
+            <a href="https://wa.me/5521973835834?text=Olá%2C+vim+pelo+seu+site+e+gostaria+de+falar+com+você." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://github.com/MatheusHenrique09" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/matheus-mendes-9a10b0290" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="mailto:MatheusHdom@Gmail.com" title="E-mail"><i class="fas fa-envelope"></i> E-mail</a>
+            <a href="cv/Matheus_Curriculo.pdf" target="_blank" title="Currículo"><i class="fas fa-file-alt"></i> Baixar CV</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Ações da Direita (Tema + Hambúrguer Mobile) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro e escuro">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Hero / Apresentação -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="img/Captura de tela 2026-07-31 175053.png" alt="Foto de perfil de Matheus Henrique" loading="lazy" />
+        </div>
+        <div class="hero-text">
+          <h1>Olá, sou o Matheus Mendes 👋</h1>
+          <p class="typing-effect">Desenvolvedor Back-End & Analista de Sistemas</p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn-cta">Veja meus projetos</a>
+            <a href="cv/Matheus_Curriculo.pdf" target="_blank" class="btn-secondary"><i class="fas fa-download"></i> Baixar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Graduado em <strong>Análise e Desenvolvimento de Sistemas (UNISUAM)</strong>, sou um profissional focado no desenvolvimento <strong>Back-End</strong>, criação de aplicações CRUD e modelagem de banco de dados.</p>
+      <p>Possuo experiência prática na construção de soluções utilizando <strong>PHP, Laravel, Python, Java, C e MySQL/PostgreSQL</strong>. Além disso, mantenho estudos contínuos na área de <strong>Redes de Computadores (Modelo OSI, TCP/IP, Subnetting)</strong> visando à certificação Cisco CCNA.</p>
+      <p>Busco minha primeira oportunidade no mercado de TI como Desenvolvedor Júnior ou Analista de Sistemas para aplicar soluções eficientes, escrever código limpo e evoluir tecnicamente com a equipe.</p>
+    </section>
+
+    <!-- Seção Competências Técnicas -->
+    <section id="habilidades" class="habilidades">
+      <h2>Competências Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Back-End & Linguagens</h3>
+          <p>PHP, Laravel, Python, Java, C, SQL</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Bancos de Dados</h3>
+          <p>MySQL, PostgreSQL, Modelagem Relacional, Estruturas CRUD, Consultas SQL</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-network-wired"></i> Redes & Infraestrutura</h3>
+          <p>Modelo OSI, TCP/IP, Subnetting, Roteamento e Monitoramento de Redes</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-globe"></i> Front-End & Web</h3>
+          <p>HTML5, CSS3, JavaScript (ES6+), Layouts Responsivos, Consumo de APIs</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-chart-bar"></i> Ferramentas & Outros</h3>
+          <p>Git/GitHub, Power BI, Excel Avançado (Dashboards), Pacote Office</p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Metodologias & Práticas</h3>
+          <p>Desenvolvimento Ágil, Arquitetura MVC, Testes Básicos, Segurança em Redes</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Projetos com Carrossel Dinâmico -->
+    <section id="projetos" class="projetos">
+      <h2>Projetos em Destaque</h2>
+
+      <!-- Filtros por Categoria -->
+      <div class="filter-buttons">
+        <button class="btn-filter active" data-filter="all">Todos</button>
+        <button class="btn-filter" data-filter="backend">Back-End</button>
+        <button class="btn-filter" data-filter="redes">Redes & Infra</button>
+      </div>
+
+      <!-- Container do Carrossel -->
+      <div class="carousel-container">
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Projeto anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <!-- O Javascript preenche essa div com os cards -->
+        <div class="projects-grid" id="projects-container"></div>
+
+        <button class="carousel-btn next" id="nextBtn" aria-label="Próximo projeto">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Mini-Game Interativo -->
+    <section id="game" class="game-section">
+      <div class="container">
+        <h3>Mini-Game Interativo: Snake</h3>
+        <canvas id="snake" width="400" height="400"></canvas>
+        <p>Use as teclas de seta do teclado para mover a cobrinha</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Interativa de Detalhes -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" id="close-modal" aria-label="Fechar modal">&times;</button>
+      <h3 id="modal-title">Título do Projeto</h3>
+      <div class="modal-body">
+        <p><strong>🎯 Problema:</strong> <span id="modal-problem"></span></p>
+        <p><strong>⚡ Desafio Técnico:</strong> <span id="modal-challenge"></span></p>
+        <p><strong>🏗️ Arquitetura:</strong> <span id="modal-arch"></span></p>
+      </div>
+      <div class="modal-footer">
+        <a id="modal-github" href="#" target="_blank" class="btn-cta"><i class="fab fa-github"></i> Repositório no GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Matheus Henrique de Oliveira Mendes. Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://wa.me/5521973835834?text=Olá%2C+vim+pelo+seu+site+e+gostaria+de+falar+com+você." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/MatheusHenrique09" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/matheus-mendes-9a10b0290" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:MatheusHdom@Gmail.com" title="E-mail"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
