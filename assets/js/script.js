@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function carregarProjetos() {
   try {
-    const response = await fetch("projetos.json");
+    const response = await fetch('assets/js/projetos.json');
     const projetos = await response.json();
     renderizarProjetos(projetos);
     configurarFiltros();

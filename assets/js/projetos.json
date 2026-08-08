@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "titulo": "PharmaStock - Controle de Farmácia",
+    "categoria": "backend",
+    "descricao": "Sistema completo para gerenciamento, cadastro e controle de estoque de medicamentos e produtos farmacêuticos.",
+    "tecnologias": ["PHP", "Laravel", "SQLite", "Bootstrap 5"],
+    "problema": "Dificuldade na rastreabilidade de lotes, controle de validade e baixa automatizada do estoque de medicamentos.",
+    "desafio": "Garantir a consistência das transações de entrada/saída e aplicar regras de negócio estritas na camada de serviços do ecossistema Laravel.",
+    "arquitetura": "Aplicação web estruturada no padrão MVC utilizando framework Laravel, ORM Eloquent, banco SQLite e interface responsiva com Bootstrap 5.",
+    "linkGithub": "https://github.com/MatheusHenrique09/pharmacy-inventory-system"
+  },
+  {
+    "id": "2",
+    "titulo": "Gerenciador de Acervo de Livros",
+    "categoria": "backend",
+    "descricao": "Aplicação web para catálogo, inventário e controle de empréstimos de acervo bibliográfico.",
+    "tecnologias": ["PHP", "MySQL", "HTML5", "CSS3"],
+    "problema": "Controle manual ineficiente de empréstimos, devoluções em atraso e gestão do inventário bibliográfico.",
+    "desafio": "Modelagem e otimização de relacionamentos N:N no MySQL para vincular usuários, livros e histórico de movimentações.",
+    "arquitetura": "Aplicação web estruturada no padrão MVC utilizando PHP nativo, sanitização de dados e banco de dados relacional MySQL.",
+    "linkGithub": "https://github.com/MatheusHenrique09/Book_Inventory_Management"
+  },
+  {
+    "id": "3",
+    "titulo": "Monitor de Ativos de Rede",
+    "categoria": "redes",
+    "descricao": "Script em Python para monitoramento de dispositivos conectados e verificação de protocolos de rede.",
+    "tecnologias": ["Python", "Sockets", "TCP/IP", "ICMP"],
+    "problema": "Falta de visibilidade rápida sobre quais dispositivos e portas estão ativos em subredes locais.",
+    "desafio": "Tratamento eficiente de varreduras assíncronas/concorrentes sem causar estouro de sockets ou sobrecarga de tráfego na interface.",
+    "arquitetura": "Script Python modular baseado na manipulação direta de sockets TCP/UDP, envio de pacotes ICMP ping e geração automática de logs.",
+    "linkGithub": "https://github.com/MatheusHenrique09/Network-Asset-Monitor"
+  },
+  {
+    "id": "4",
+    "titulo": "Monitor de Rede Web",
+    "categoria": "redes",
+    "descricao": "Dashboard interativo para visualização de métricas e status de disponibilidade de ativos de infraestrutura em tempo real.",
+    "tecnologias": ["Python", "Flask", "JavaScript", "HTML/CSS"],
+    "problema": "Ausência de uma interface gráfica centralizada para acompanhar a latência e o status de disponibilidade da infraestrutura em tempo real.",
+    "desafio": "Sincronizar a coleta contínua do motor de varredura em Python com a atualização dinâmica dos elementos na interface web.",
+    "arquitetura": "Arquitetura desacoplada com backend em Python fornecendo métricas estruturadas via API/sockets e frontend web responsivo para exibição do status.",
+    "linkGithub": "https://github.com/MatheusHenrique09/Network-Asset-Monitor"
+  }
+]
